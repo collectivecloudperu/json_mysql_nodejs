@@ -6,9 +6,9 @@ app.use(express.static('public'));
 var mysql      = require('mysql');  
 var connection = mysql.createConnection({  
   host     : 'localhost',  
-  user     : 'root',  
-  password : '',  
-  database : 'test'  
+  user     : 'usuario',  
+  password : 'password',  
+  database : 'midb'    
 });        
 
 app.get('/json', function (req, res) {
